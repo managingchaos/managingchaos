@@ -13,9 +13,9 @@
       --micro: #77726b;
       --button: #111111;
       --button-text: #ffffff;
-      --panel: rgba(244, 240, 233, 0.92);
+      --panel: rgba(244, 240, 233, 0.85);
       --panel-border: rgba(32,31,28,.08);
-      --panel-shadow: 0 18px 40px rgba(0,0,0,.08);
+      --panel-shadow: 0 18px 40px rgba(0,0,0,.33);
       --max: 1200px;
       --radius: 14px;
     }
@@ -144,6 +144,47 @@
         max-width: 100%;
       }
     }
+
+  .site-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 18px;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .footer-chip {
+    pointer-events: auto;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: rgba(244, 240, 233, 0.32);
+    border: 1px solid rgba(32,31,28,.08);
+    box-shadow: 0 10px 24px rgba(0,0,0,.06);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: rgba(32,31,28,.72);
+    font-size: 12px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 720px) {
+    .site-footer {
+      bottom: 12px;
+      padding: 0 14px;
+    }
+
+    .footer-chip {
+      width: auto;
+      max-width: 100%;
+      text-align: center;
+      font-size: 11px;
+      padding: 10px 12px;
+    }
+  }
   </style>
 </head>
 <body>
@@ -162,10 +203,15 @@
 
         <div class="actions">
           <a class="button" href="contact.html">Contact</a>
-          <span class="micro">Quiet, simple, direct.</span>
+          <span class="micro">Quiet, simple, direct.</span>          
         </div>
       </section>
     </div>
   </main>
+<footer class="site-footer">
+  <div class="footer-chip">
+    © 2026 managingCHAOS. All rights reserved.
+  </div>
+</footer>
 </body>
 </html>
