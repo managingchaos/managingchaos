@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>managingCHAOS</title>
+  <meta name="description" content="Because chaos doesn't fix itself." />
+  <style>
+    :root {
+      --bg: #ece9e3;
+      --text: #201f1c;
+      --muted: #3a3834;
+      --micro: #77726b;
+      --button: #111111;
+      --button-text: #ffffff;
+      --panel: rgba(244, 240, 233, 0.92);
+      --panel-border: rgba(32,31,28,.08);
+      --panel-shadow: 0 18px 40px rgba(0,0,0,.08);
+      --max: 1200px;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: url('images/mc-home-bg.webp') center center / cover no-repeat;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 48px));
+      margin: 0 auto;
+      padding: 72px 0;
+      display: grid;
+      grid-template-columns: minmax(320px, 620px);
+    }
+
+    .content-box {
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: var(--radius);
+      box-shadow: var(--panel-shadow);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      padding: 30px 32px 28px;
+      max-width: 640px;
+    }
+
+    .logo-image {
+      display: block;
+      width: min(100%, 410px);
+      height: auto;
+      margin: 0 0 22px;
+    }
+
+    .tagline {
+      margin: 0 0 18px;
+      font-size: clamp(34px, 4vw, 58px);
+      line-height: .95;
+      letter-spacing: -.03em;
+      max-width: 14ch;
+      color: var(--text);
+    }
+
+    .subcopy {
+      margin: 0 0 28px;
+      max-width: 28rem;
+      color: var(--muted);
+      font-size: clamp(18px, 1.35vw, 20px);
+      line-height: 1.5;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 15px 24px;
+      border-radius: 999px;
+      background: var(--button);
+      color: var(--button-text);
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1;
+      transition: transform .12s ease, opacity .18s ease;
+    }
+
+    .button:hover { opacity: .92; }
+    .button:active { transform: translateY(1px); }
+
+    .micro {
+      color: var(--micro);
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 720px) {
+      .hero {
+        align-items: flex-end;
+        background-position: 63% center;
+      }
+
+      .wrap {
+        width: min(calc(100% - 28px), 680px);
+        padding: 28px 0 24px;
+        grid-template-columns: 1fr;
+      }
+
+      .content-box {
+        padding: 24px 22px 22px;
+        border-radius: 14px;
+        max-width: 100%;
+      }
+
+      .logo-image {
+        width: min(100%, 360px);
+        margin-bottom: 18px;
+      }
+
+      .tagline {
+        font-size: clamp(34px, 8vw, 52px);
+        max-width: 12ch;
+      }
+
+      .subcopy {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <div class="wrap">
+      <section class="content-box">
+        <img
+          class="logo-image"
+          src="images/managingCHAOS-home.svg"
+          alt="managingCHAOS"
+        />
+
+        <h1 class="tagline">Because chaos<br>doesn’t fix itself.</h1>
+
+        <p class="subcopy">Practical strategy and problem-solving for complicated situations that need clarity, structure, and forward motion.</p>
+
+        <div class="actions">
+          <a class="button" href="contact.html">Contact</a>
+          <span class="micro">Quiet, simple, direct.</span>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
