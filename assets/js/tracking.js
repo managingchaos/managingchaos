@@ -1,5 +1,5 @@
 (function () {
-  const endpoint = "YOUR_APPS_SCRIPT_URL_HERE";
+  const endpoint = "Yhttps://script.google.com/macros/s/AKfycbwS-YRSn0Ye2f88X5w_8O0Fs6kBookus9zsgiqXjamLDwqSVb0IRLYt-Jf4V2HorA0bHg/exec";
 
   function getParam(name) {
     const params = new URLSearchParams(window.location.search);
