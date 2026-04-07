@@ -5,190 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>managingCHAOS</title>
   <meta name="description" content="Because chaos doesn't fix itself." />
-  <style>
-    :root {
-      --bg: #111111;
-      --text: #201f1c;
-      --muted: #3a3834;
-      --micro: #77726b;
-      --button: #111111;
-      --button-text: #ece9e3;
-      --panel: rgba(244, 240, 233, 0.85);
-      --panel-border: rgba(32,31,28,.08);
-      --panel-shadow: 0 18px 40px rgba(0,0,0,.33);
-      --max: 1200px;
-      --radius: 9px;
-    }
-
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-
-    body {
-      min-height: 100vh;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      background: url('images/mc-home-bg.webp') center center / cover no-repeat;
-    }
-
-    .wrap {
-      width: min(var(--max), calc(100% - 48px));
-      margin: 0 auto;
-      padding: 72px 0;
-      display: grid;
-      grid-template-columns: minmax(320px, 620px);
-    }
-
-    .content-box {
-      background: var(--panel);
-      border: 1px solid var(--panel-border);
-      border-radius: var(--radius);
-      box-shadow: var(--panel-shadow);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      padding: 30px 32px 28px;
-      max-width: 640px;
-    }
-
-    .logo-image {
-      display: block;
-      width: min(100%, 410px);
-      height: auto;
-      margin: 0 0 22px;
-    }
-
-    .tagline {
-      margin: 0 0 18px;
-      font-size: clamp(34px, 4vw, 58px);
-      line-height: .95;
-      letter-spacing: -.03em;
-      max-width: 14ch;
-      color: var(--text);
-    }
-
-    .subcopy {
-      margin: 0 0 28px;
-      max-width: 28rem;
-      color: var(--muted);
-      font-size: clamp(18px, 1.35vw, 20px);
-      line-height: 1.5;
-    }
-
-    .actions {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 54px;
-      padding: 15px 24px;
-      border-radius: 999px;
-      background: var(--button);
-      color: var(--button-text);
-      text-decoration: none;
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1;
-      transition: transform .12s ease, opacity .18s ease;
-    }
-
-    .button:hover { opacity: .72; }
-    .button:active { transform: translateY(1px); }
-
-    .micro {
-      color: var(--micro);
-      font-size: 14px;
-      line-height: 1.4;
-    }
-
-    .site-footer {
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 18px;
-      display: flex;
-      justify-content: center;
-      pointer-events: none;
-      z-index: 10;
-    }
-
-    .footer-chip {
-      pointer-events: auto;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(244, 240, 233, 0.32);
-      border: 1px solid rgba(32,31,28,.08);
-      box-shadow: 0 10px 24px rgba(0,0,0,.06);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      color: rgba(32,31,28,.72);
-      font-size: 12px;
-      line-height: 1;
-      white-space: nowrap;
-    }
-
-    @media (max-width: 720px) {
-      .hero {
-        min-height: auto;
-        align-items: flex-start;
-        background-position: 63% center;
-      }
-
-      .wrap {
-        width: min(calc(100% - 28px), 680px);
-        padding: 28px 0 18px;
-        grid-template-columns: 1fr;
-      }
-
-      .content-box {
-        padding: 24px 22px 22px;
-        border-radius: 14px;
-        max-width: 100%;
-      }
-
-      .logo-image {
-        width: min(100%, 360px);
-        margin-bottom: 18px;
-      }
-
-      .tagline {
-        font-size: clamp(34px, 8vw, 52px);
-        max-width: 12ch;
-      }
-
-      .subcopy {
-        max-width: 100%;
-      }
-
-      .site-footer {
-        position: static;
-        display: flex;
-        justify-content: center;
-        padding: 0 14px 16px;
-        margin-top: 10px;
-        pointer-events: auto;
-      }
-
-      .footer-chip {
-        width: auto;
-        max-width: 100%;
-        text-align: center;
-        font-size: 11px;
-        padding: 10px 12px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/site.css" />
 </head>
 <body>
   <main class="hero">
@@ -196,7 +13,7 @@
       <section class="content-box">
         <img
           class="logo-image"
-          src="images/managingCHAOS-home.svg"
+          src="assets/images/managingCHAOS-home.svg"
           alt="managingCHAOS"
         />
 
@@ -205,7 +22,7 @@
         <p class="subcopy">Practical strategy and problem-solving for complicated situations that need clarity, structure, and forward motion.</p>
 
         <div class="actions">
-          <a class="button" href="contact.html">Contact</a>
+          <a class="button" href="/contact.html">Contact</a>
           <span class="micro">Quiet, simple, direct.</span>
         </div>
       </section>
@@ -214,8 +31,12 @@
 
   <footer class="site-footer">
     <div class="footer-chip">
-      © 2026 managingCHAOS. All rights reserved.
+      This site collects limited visitor data for traffic and performance insights.
+      <a href="/privacy.html">Privacy Policy</a>.
+      <a href="/contact.html">Contact</a>.
     </div>
   </footer>
+
+  <script src="assets/js/tracking.js"></script>
 </body>
 </html>
