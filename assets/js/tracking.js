@@ -1,5 +1,5 @@
 (function () {
-  const endpoint = "https://script.google.com/macros/s/AKfycbwS-YRSn0Ye2f88X5w_8O0Fs6kBookus9zsgiqXjamLDwqSVb0IRLYt-Jf4V2HorA0bHg/exec";
+  const endpoint = "https://billowing-lake-2568.joel-b36.workers.dev/";
 
   function getParam(name) {
     const params = new URLSearchParams(window.location.search);
