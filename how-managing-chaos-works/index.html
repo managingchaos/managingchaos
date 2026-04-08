@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>How Managing Chaos Works | Managing Chaos</title>
+  <meta name="description" content="Learn how Managing Chaos works: a practical approach to clarifying complex situations, reducing friction, and creating structured forward motion." />
+  <link rel="canonical" href="https://managingchaos.com/how-managing-chaos-works/" />
+
+  <meta property="og:title" content="How Managing Chaos Works | Managing Chaos" />
+  <meta property="og:description" content="A practical approach to clarifying complex situations, reducing friction, and creating structured forward motion." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://managingchaos.com/how-managing-chaos-works/" />
+  <meta property="og:site_name" content="managingCHAOS" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Managing Chaos Works | Managing Chaos" />
+  <meta name="twitter:description" content="A practical approach to clarifying complex situations, reducing friction, and creating structured forward motion." />
+
+  <link rel="stylesheet" href="https://use.typekit.net/aub1wvf.css">
+  <link rel="stylesheet" href="/assets/css/site.css" />
+
+  <style>
+    .section-band {
+      position: relative;
+      z-index: 2;
+      background: rgba(17, 17, 17, 0.88);
+      color: var(--text-main);
+      padding: 64px 0 84px;
+      border-top: 1px solid rgba(182, 182, 161, 0.12);
+    }
+
+    .section-wrap {
+      width: min(var(--max), calc(100% - 80px));
+      margin: 0 auto;
+    }
+
+    .section-content {
+      max-width: 980px;
+      padding-left: 8px;
+    }
+
+    .section-kicker {
+      margin: 0 0 18px;
+      color: var(--text-main);
+      font-family: "cubano", Arial, sans-serif;
+      font-size: clamp(16px, 1vw, 22px);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      opacity: .9;
+    }
+
+    .section-title {
+      margin: 0 0 26px;
+      max-width: 12ch;
+      color: var(--text-main);
+      font-family: "cubano", Arial, sans-serif;
+      font-size: clamp(34px, 4vw, 62px);
+      font-weight: 700;
+      line-height: 0.96;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      text-shadow:
+        0 2px 0 rgba(46, 28, 18, 0.45),
+        0 5px 18px rgba(0, 0, 0, 0.14);
+    }
+
+    .section-copy {
+      max-width: 760px;
+      color: var(--text-main);
+      font-family: proxima-nova, sans-serif;
+      font-size: clamp(18px, 1.35vw, 22px);
+      font-weight: 400;
+      line-height: 1.65;
+    }
+
+    .section-copy p {
+      margin: 0 0 18px;
+    }
+
+    .section-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-copy a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 0.12em;
+    }
+
+    .steps {
+      display: grid;
+      gap: 28px;
+      max-width: 860px;
+      margin-top: 36px;
+    }
+
+    .step {
+      padding-top: 22px;
+      border-top: 1px solid rgba(182, 182, 161, 0.16);
+    }
+
+    .step:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .step-number {
+      margin: 0 0 10px;
+      color: var(--text-main);
+      font-family: "cubano", Arial, sans-serif;
+      font-size: clamp(16px, 1vw, 20px);
+      text-transform: uppercase;
+      opacity: .85;
+    }
+
+    .step h3 {
+      margin: 0 0 10px;
+      color: var(--text-main);
+      font-family: "cubano", Arial, sans-serif;
+      font-size: clamp(22px, 2vw, 30px);
+      font-weight: 700;
+      line-height: 1.02;
+      text-transform: uppercase;
+      text-shadow:
+        0 1px 0 rgba(46, 28, 18, 0.45),
+        0 4px 14px rgba(0, 0, 0, 0.14);
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--text-main);
+      font-family: proxima-nova, sans-serif;
+      font-size: clamp(18px, 1.2vw, 21px);
+      line-height: 1.65;
+    }
+
+    .inline-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .inline-cta-row a {
+      color: var(--text-main);
+      font-family: "cubano", Arial, sans-serif;
+      font-size: clamp(16px, 1vw, 20px);
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-shadow:
+        0 1px 0 rgba(46, 28, 18, 0.45),
+        0 3px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    @media (max-width: 900px) {
+      .section-wrap {
+        width: min(calc(100% - 32px), 900px);
+      }
+
+      .section-content {
+        max-width: 100%;
+        padding-left: 0;
+      }
+
+      .section-band {
+        padding: 48px 0 64px;
+      }
+
+      .section-title {
+        font-size: clamp(28px, 8vw, 46px);
+      }
+
+      .section-copy,
+      .step p {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 1.65;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How Managing Chaos Works",
+      "url": "https://managingchaos.com/how-managing-chaos-works/"
+    }
+  </script>
+</head>
+<body>
+  <main class="page">
+    <div class="wrap">
+      <section class="content">
+        <img class="logo-image" src="/assets/images/managingCHAOS-home.svg" alt="managingCHAOS" />
+
+        <p class="eyebrow">How it works</p>
+        <h1 class="page-title">A practical process for complicated situations.</h1>
+
+        <p class="intro">Managing Chaos works by clarifying the real problem, reducing friction, organizing the moving parts, and creating a more useful path forward.</p>
+
+        <div class="actions">
+          <a class="button" href="/contact/">Contact</a>
+          <span class="micro">Quiet, simple, direct.</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section class="section-band" aria-labelledby="how-managing-chaos-works">
+    <div class="section-wrap">
+      <div class="section-content">
+        <p class="section-kicker">How managing chaos works</p>
+        <h2 class="section-title" id="how-managing-chaos-works">Clarity first. Then structure. Then motion.</h2>
+
+        <div class="section-copy">
+          <p>Most complicated situations do not improve because people try harder. They improve when the situation itself becomes clearer, more structured, and easier to move through. That is the logic behind managing chaos.</p>
+
+          <p>The process is practical. It is meant to reduce confusion, improve decision-making, and help create forward motion without unnecessary drama, clutter, or overcomplication.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <p class="step-number">Step 1</p>
+            <h3>Clarify what is actually going on</h3>
+            <p>The first step is sorting signal from noise. That means identifying the real problem, understanding where the friction is coming from, and separating symptoms from root causes. In many situations, that alone creates immediate relief and better judgment.</p>
+          </div>
+
+          <div class="step">
+            <p class="step-number">Step 2</p>
+            <h3>Reduce competing noise and moving parts</h3>
+            <p>Once the situation is clearer, the next step is simplifying it. That may mean narrowing priorities, organizing information, reducing unnecessary complexity, or identifying what is creating drag. The goal is not perfection. The goal is a cleaner, more workable structure.</p>
+          </div>
+
+          <div class="step">
+            <p class="step-number">Step 3</p>
+            <h3>Create a more useful path forward</h3>
+            <p>With better clarity and structure, the situation becomes easier to move. This is where priorities get sharper, decisions get cleaner, and next steps become more practical. Instead of reacting to chaos, the work becomes about directing it.</p>
+          </div>
+
+          <div class="step">
+            <p class="step-number">Step 4</p>
+            <h3>Keep momentum without adding more confusion</h3>
+            <p>The final piece is making sure progress holds. That means keeping the approach practical, the communication clear, and the next actions aligned with what actually matters. Managing chaos works best when the process itself lowers friction rather than creating new layers of it.</p>
+          </div>
+        </div>
+
+        <div class="section-copy" style="margin-top: 34px;">
+          <p>If you want more context on the idea behind the brand, visit <a href="/what-is-managing-chaos/">What Is Managing Chaos?</a>. If you want a broader overview of the work, see <a href="/services/">Services</a>. If you want to understand the thinking behind it, read <a href="/about/">About</a>.</p>
+        </div>
+
+        <div class="inline-cta-row">
+          <a href="/contact/">Start a conversation</a>
+          <a href="/services/">Services</a>
+          <a href="/what-is-managing-chaos/">What Is Managing Chaos?</a>
+          <a href="/about/">About</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-chip">
+      © 2026 managingCHAOS. All rights reserved. <span aria-hidden="true">|</span>
+      This site collects limited visitor data for traffic and performance insights.
+      <a href="/privacy/">Privacy Policy</a>.
+      <a href="/contact/">Contact</a>.
+    </div>
+  </footer>
+
+  <script src="/assets/js/tracking.js"></script>
+</body>
+</html>
