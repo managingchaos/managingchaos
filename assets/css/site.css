@@ -168,6 +168,11 @@ body {
   text-decoration: underline;
 }
 
+.back-link {
+  display: inline-block;
+  margin-top: 18px;
+}
+
 form {
   display: grid;
   gap: 18px;
